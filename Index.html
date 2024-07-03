@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Livros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Catálogo de Livros Online</h1>
+        
+        
+        <form id="formAdicionarLivro">
+            <h2>Adicionar Livro</h2>
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" required><br>
+            
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" required><br>
+            
+            <label for="genero">Gênero:</label>
+            <input type="text" id="genero" required><br>
+            
+            <label for="ano">Ano de Publicação:</label>
+            <input type="number" id="ano" required><br>
+            
+            <label for="avaliacao">Avaliação:</label>
+            <input type="number" id="avaliacao" step="0.1" min="0" max="5" required><br>
+            
+            <button type="submit">Adicionar Livro</button>
+        </form>
+
+        
+        <form id="formBuscarLivro">
+            <h2>Buscar Livro</h2>
+            <label for="termoBusca">Título, Autor ou Gênero:</label>
+            <input type="text" id="termoBusca">
+            <button type="submit">Buscar</button>
+        </form>
+
+        
+        <div id="listaLivros">
+            <h2>Lista de Livros</h2>
+            <ul id="livros"></ul>
+        </div>
+    </div>
+
+    <script src="Projeto.Js"></script>
+</body>
+</html>
